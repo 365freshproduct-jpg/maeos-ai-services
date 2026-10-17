@@ -1,0 +1,60 @@
+name: Service request (public)
+description: Request a non-binding quote for AI or software services; do not include confidential information.
+title: "[Service request] "
+labels:
+  - service-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This form creates a PUBLIC GitHub issue.**
+        Do NOT paste private contact details, credentials, API keys, bank accounts, customer datasets, secrets or unpublished code.
+        A quote is not an accepted contract, payment instruction, or delivery guarantee.
+  - type: input
+    id: project
+    attributes:
+      label: Public project name
+      description: Company or project name that is safe to publish
+      placeholder: Example Project
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the business problem using public details only
+      placeholder: We need to automate a weekly CSV reconciliation.
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Expected deliverables
+      description: Specify a measurable result; no confidential data
+      placeholder: CSV parser, summary dashboard and tests.
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Budget USD (optional)
+      description: Optional proposed budget; e.g. 350, not a confirmed contract
+      placeholder: "350"
+    validations:
+      required: false
+  - type: input
+    id: deadline
+    attributes:
+      label: Target deadline (optional)
+      placeholder: "2026-11-05"
+    validations:
+      required: false
+  - type: checkboxes
+    id: authorization
+    attributes:
+      label: Authorization
+      options:
+        - label: I am authorized to request a non-binding quote
+          required: true
+        - label: I understand this issue is public and contains no confidential information
+          required: true
