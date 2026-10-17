@@ -10,6 +10,7 @@ body:
         **This form creates a PUBLIC GitHub issue.**
         Do NOT paste private contact details, credentials, API keys, bank accounts, customer datasets, secrets or unpublished code.
         A quote is not an accepted contract, payment instruction, or delivery guarantee.
+        You can describe your project in English, Russian (русский) or Armenian (հայերեն).
   - type: input
     id: project
     attributes:
